@@ -1,0 +1,727 @@
+{
+
+    "intro" : { 
+                 "text": "August 13, 1987, Valdosta Park Ohio",
+                 "image":"images/dominos.jpg" ,
+                 "choices" : [ {
+                                     "text" : "Continue",
+                                     "next_state" : "intro2"
+                                 }
+                            ]
+                 },
+    "intro2" : { 
+                 "text": "Just another day as a pizza delivery man… The manager wrote the orders down here.",
+                 "image":"images/dominos.jpg" ,
+                 "choices" : [ {
+                                     "text" : "Continue",
+                                     "next_state" : "intro3"
+                                 }
+                            ]
+                 },
+    "intro3" : { 
+                 "text": "Orders: John Smith, 1205 Valdosta St, San Luis Park: Large Pepperoni Pizza ",
+                 "image":"images/dominos.jpg" ,
+                 "choices" : [ {
+                                     "text" : "Continue",
+                                     "next_state" : "intro4"
+                                 }
+                            ]
+                 },
+    "intro4" : { 
+                 "text": "The Manager: Slow Night, Welp, looks like there's only one order right now.",
+                 "image":"images/dominos.jpg" ,
+                 "choices" : [ {
+                                     "text" : "Continue",
+                                     "next_state" : "intro5"
+                                 }
+                            ]
+                 },
+    "intro5" : { 
+                        "text": "",
+                        "image":"images/dominos.jpg" ,
+                        "choices" : [ {
+                                            "text" : "Get in your car and drive there",
+                                            "next_state" : "house1"
+                                        }
+                                ]
+                        },
+
+    "house1" : { 
+                        "text": "It was a long and difficult drive halfway across town.",
+                        "image":"images/latenight.jpg" ,
+                        "choices" : [ {
+                                            "text" : "Continue",
+                                            "next_state" : "house1-2"
+                                        }
+                                ]
+                            },
+    "house1-2" : { 
+                        "text": "You get there and knock on the door",
+                        "image":"images/house.jpg" ,
+                        "choices" : [ {
+                                            "text" : "Continue",
+                                            "next_state" : "house1-3"
+                                        }
+                                ]
+                            },
+      "house1-3" : { 
+                        "text": "Nobody answers",
+                        "image":"images/house.jpg" ,
+                        "choices" : [ {
+                                            "text" : "Continue",
+                                            "next_state" : "house1-4"
+                                        }
+                                ]
+                            },
+
+    "house1-4" : { 
+                        "text": "",
+                        "image":"images/house.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Knock Again",
+                                            "next_state" : "manQuest"
+                                        },
+                                        {
+                                            "text" : "Leave the pizza and walk away",
+                                            "next_state" : "ending-ordinary-mundane1"
+                                        }
+
+                                ]
+                            },
+   "manQuest" : { 
+                        "text": "Someone walks out the door...",
+                        "image":"images/house.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "manQuest-2"
+                                        }
+                                ]
+                            },
+     "manQuest-2" : { 
+                        "text": "The man says: Um peeza, mmmhh. Yes. Um. Dooju hab ze boss nem Frenk? ",
+                        "image":"images/maninfront.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Yes (lie, your bosses name is not Frank)",
+                                            "next_state" : "delivery-1"
+                                        },
+                                        {
+                                            "text" : "No",
+                                            "next_state" : "sad"   
+                                        }
+                                ]
+                            },
+  "delivery-1" : { 
+                        "text": "The man says: I no jor boss. He sez u work forr me now. I also peeza shop. Weit heer.",
+                        "image":"images/maninfront.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "delivery-2"
+                                        }
+                                ]
+                            },
+ "delivery-2" : { 
+                        "text": "The man walks inside.",
+                        "image":"images/house.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "delivery-3"
+                                        }
+                                ]
+                            },
+"delivery-3" : { 
+                        "text": "The man comes back outside with a big bag and a beer.",
+                        "image":"images/maninfront.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "delivery-4"
+                                        }
+                                ]
+                            },
+"delivery-4" : { 
+                        "text": "The man says: Inside thees iz peeza. Delivir to uhhhhhhh here. He points 2 states away to New York on his map.",
+                        "image":"images/maninfront.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "delivery-5"
+                                        }
+                                ]
+                            },
+"delivery-5" : { 
+                        "text": "Also theez bere is gift from me. *He hands you the bag and the beer. Its very very heavy. The man goes back inside.",
+                        "image":"images/maninfront.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "delivery-6"
+                                        }
+                                ]
+                            },
+"delivery-6" : { 
+                        "text": "What would you like to do?",
+                        "image":"images/question.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Go back to dominos and not listen to the man.",
+                                            "next_state" : "ending-ordinary-mundane1"
+                                        },
+                                        {
+                                             "text" : "Fufill your destiny.",
+                                            "next_state" : "destiny-1"
+                                        }
+                                ]
+                            },
+"destiny-1" : { 
+                        "text": "You begin driving to New York, whatever direction that is",
+                        "image":"images/latenight.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue.",
+                                            "next_state" : "destiny-2"
+                                        }
+
+                                ]
+                            },
+"destiny-2" : { 
+                        "text": "1 hour in, something looks very appealing in the corner of your eye",
+                        "image":"images/latenight.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue.",
+                                            "next_state" : "destiny-3"
+                                        }
+
+                                ]
+                            },
+"destiny-3" : { 
+                        "text": "The alcoholic beverage the man gave you and said was a gift glows up in the moonlight",
+                        "image":"images/jager.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue.",
+                                            "next_state" : "destiny-4"
+                                        }
+
+                                ]
+                            },
+"destiny-4" : { 
+                        "text": "",
+                        "image":"images/latenight.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Take a sip",
+                                            "next_state" : "swerve-1"
+                                        },
+                                        {
+                                            "text" : "Just keep driving",
+                                            "next_state" : "New-York-mid-ending"
+                                        }
+                                ]
+                            },
+"New-York-mid-ending" : { 
+                        "text": "You drive to New York, particularly New York City",
+                        "image":"images/latenight.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "New-York-mid-ending-2"
+                                        }
+                                ]
+                            },
+"New-York-mid-ending-2" : { 
+                        "text": "You quickly don't have enough money to live there, and go homeless instantly",
+                        "image":"images/nyc.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "New-York-mid-ending-3"
+                                        }
+                                ]
+                            },
+"New-York-mid-ending-3" : { 
+                        "text": "You live the rest of your life wandering the streets of NYC endlessly. Atleast its better than pizza delivery in Ohio",
+                        "image":"images/homeless.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "end"
+                                        }
+                                ]
+                            },
+
+
+"swerve-1" : { 
+                        "text": "You begin to swerve on the road as you get drunk",
+                        "image":"images/latenight.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "swerve-2"
+                                        }
+                                ]
+                            },
+"swerve-2" : { 
+                        "text": "You let out a scream. JAAAGGGGGEEERRR",
+                        "image":"images/latenight.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "swerve-3"
+                                        }
+                                ]
+                            },
+"swerve-3" : { 
+                        "text": "Your car swerves side to side",
+                        "image":"images/latenight.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "swerve-4"
+                                        }
+                                ]
+                            },
+"swerve-4" : { 
+                        "text": "A cop notices, and pulls you over",
+                        "image":"images/police.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "swerve-5"
+                                        }
+                                ]
+                            },
+"swerve-5" : { 
+                        "text": "The cop walks up to you, and you pull down your window. The officer asks: Do you know why I pulled you over?",
+                        "image":"images/police.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "swerve-7"
+                                        }
+                                ]
+                            },
+"swerve-7" : { 
+                        "text": "You respond...",
+                        "image":"images/police.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Sir do not look at the bag I have please you don't have a warrant...",
+                                            "next_state" : "death-by-bag"
+                                        },
+                                        {
+                                            "text" : "JAGGEEEERRRRR",
+                                            "next_state" : "swerve-8"
+                                        }
+                                ]
+                            },
+"death-by-bag" : { 
+                        "text": "The officer gets curious about the bag. He gets you out of the car.",
+                        "image":"images/police.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "death-by-bag-2"
+                                        }
+                                ]
+                            },
+"death-by-bag-2" : { 
+                        "text": "His eyes glow up when he sees whats inside and immediately shoots you.",
+                        "image":"images/police.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "death"
+                                        }
+                                ]
+                            },
+
+"swerve-8" : { 
+                        "text": "The officer says: Welp, just watch yourself on the road. Take care. I'd ask for some jager too, but well, I'm trying to lose some weight. ",
+                        "image":"images/police.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Yep, you be on your way officer",
+                                            "next_state" : "swerve-9"
+                                        }
+                                ]
+                            },
+"swerve-9" : { 
+                        "text": "The officer leaves. You get back in your car. You realize that since you've been drinking, you've been going the wrong way for a long time.",
+                        "image":"" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "forest-monks-1"
+                                        }
+                                ]
+                            },
+"forest-monks-1" : { 
+                        "text": "Your car runs out of gas and you are lost in the forest...",
+                        "image":"images/latenight.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "forest-monks-2"
+                                        }
+                                ]
+                            },
+"forest-monks-2" : { 
+                        "text": "You get out of your car to push it when you suddenly become unconcious",
+                        "image":"" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "forest-monks-3"
+                                        }
+                                ]
+                            },
+"forest-monks-3" : { 
+                        "text": "You see entities around you",
+                        "image":"images/monks.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "forest-monks-4"
+                                        }
+                                ]
+                            },
+"forest-monks-4" : { 
+                        "text": "They give you an ID of a woman. They tell you she is in new york. Find her. Its your destiny",
+                        "image":"images/monks.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "forest-monks-5"
+                                        }
+                                ]
+                            },
+"forest-monks-5" : { 
+                        "text": "They tell you to give whats in the bag to her. DO NOT LOOK in the bag.",
+                        "image":"images/monks.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "forest-monks-6"
+                                        }
+                                ]
+                            },
+"forest-monks-6" : { 
+                        "text": "You fall unconcious again....",
+                        "image":"" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "forest-monks-7"
+                                        }
+                                ]
+                            },
+"forest-monks-7" : { 
+                        "text": "You wake up while driving on the road. Your gas tank is magically full",
+                        "image":"images/latenight.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "forest-monks-8"
+                                        }
+                                ]
+                            },
+"forest-monks-8" : { 
+                        "text": "You head for New York",
+                        "image":"images/latenight.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "new-york-win"
+                                        }
+                                ]
+                            },
+"new-york-win" : { 
+                        "text": "You manage to get your way to New York. The bag you have with you glows in the moonlight. Take a peek?",
+                        "image":"images/latenight.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Peek into the bag",
+                                            "next_state" : "failed-destiny-end"
+                                        },
+                                        {
+                                             "text" : "Don't peek, listen to the forest monks. Your destiny hangs in the balance.",
+                                            "next_state" : "true-ending"
+                                        }
+                                ]
+                            },
+
+
+
+"failed-destiny-end" : { 
+                        "text": "You look in the bag. Before you have a chance to look",
+                        "image":"images/latenight.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "failed-destiny-end-2"
+                                        }
+                                ]
+                            },
+"failed-destiny-end-2" : { 
+                        "text": "A garbage truck runs into your car",
+                        "image":"images/garbagetruck.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "death"
+                                        }
+                                ]
+                            },
+
+
+"death" : { 
+                        "text": "You died",
+                        "image":"images/youdied.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "end"
+                                        }
+                                ]
+                            },
+
+
+
+
+
+
+  "sad" : { 
+                        "text": "The man says: Well thatza shem. Bye. ",
+                        "image":"images/maninfront.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "sad-2"
+                                        }
+                                ]
+                            },
+      "sad-2" : { 
+                        "text": "...",
+                        "image":"images/house.jpg" ,
+                        "choices" : [ 
+                                        {
+                                            "text" : "Continue",
+                                            "next_state" : "ending-ordinary-mundane1"
+                                        }
+                                ]
+                            },
+
+    
+
+                            
+    "ending-ordinary-mundane1" : { 
+        "text": "You drive back to Dominos, like any other day.",
+        "image":"images/dominos.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "ending-ordinary-mundane2"
+                        }
+                ]
+            },
+ "ending-ordinary-mundane2" : { 
+        "text": "You spent the rest of your life as a delivery driver, only wondering what could've been if you had done something different on this fateful day.",
+        "image":"images/dominos.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "end"
+                        }
+                ]
+            },
+ "end" : { 
+        "text": "The End",
+        "image":"" ,
+        "choices" : [ 
+                        {
+                            "text" : "Restart Game",
+                            "next_state" : "intro"
+                        }
+                ]
+            },
+    
+"true-ending" : { 
+        "text": "You end up in New York City after a super long drive",
+        "image":"images/latenight.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "true-ending-2"
+                        }
+                ]
+            },
+"true-ending-2" : { 
+        "text": "You quickly go homeless after being in the city for like 2 days as its too expensive",
+        "image":"images/nyc.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "true-ending-3"
+                        }
+                ]
+            },
+"true-ending-3" : { 
+        "text": "For 20 years, you wandered the streets in search of this Lady...",
+        "image":"images/homeless.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "true-ending-4"
+                        }
+                ]
+            },
+"true-ending-4" : { 
+        "text": "One day, you see the lady in a starbucks",
+        "image":"images/starbucks.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "true-ending-5"
+                        }
+                ]
+            },
+"true-ending-5" : { 
+        "text": "The lady sees your bag, and tells you to come with her to the lab.",
+        "image":"images/starbucks.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "true-ending-6"
+                        }
+                ]
+            },
+"true-ending-6" : { 
+        "text": "At the lab, she unzips and reveals the contents from the bag",
+        "image":"images/thelab.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "true-ending-7"
+                        }
+                ]
+            },
+"true-ending-7" : { 
+        "text": "She reveals 2 things. A 20 year old moldy Large Pepperoni Pizza from Dominos, and a bottle of pink liquid.",
+        "image":"images/thelab.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "true-ending-8"
+                        }
+                ]
+            },
+"true-ending-8" : { 
+        "text": "She then eats a slice of the pizza, and barely gets it down as you look in shock.",
+        "image":"images/thelab.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "true-ending-9"
+                        }
+                ]
+            },
+"true-ending-9" : { 
+        "text": "She then drinks the pink liquid... as you look in shock",
+        "image":"images/thelab.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "true-ending-10"
+                        }
+                ]
+            },
+"true-ending-10" : { 
+        "text": "... 5 minutes pass",
+        "image":"images/thelab.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "true-ending-11"
+                        }
+                ]
+            },
+"true-ending-11" : { 
+        "text": "She tells you no tummy ache. Formula 6h375 is a success.",
+        "image":"images/thelab.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "true-ending-12"
+                        }
+                ]
+            },
+"true-ending-12" : { 
+        "text": "She then calls someone.",
+        "image":"images/thelab.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "true-ending-13"
+                        }
+                ]
+            },
+"true-ending-13" : { 
+        "text": "She says: Frank, the operation was successful.",
+        "image":"images/thelab.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "true-ending-14"
+                        }
+                ]
+            },
+"true-ending-14" : { 
+        "text": "After this day, the Lady, Frank, the Man that you delivered pizza to, and you were 4 way business owners in the multi-trillion dollar company...",
+        "image":"" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "true-ending-15"
+                        }
+                ]
+            },
+"true-ending-15" : { 
+        "text": "Pepto-Bismol.",
+        "image":"images/pepto.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "true-ending-16"
+                        }
+                ]
+            },
+"true-ending-16" : { 
+        "text": "Pepto-Bismol was then distributed world-wide, and tummy aches were a thing of the past...",
+        "image":"images/pepto.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Continue",
+                            "next_state" : "true-ending-17"
+                        }
+                ]
+            },
+"true-ending-17" : { 
+        "text": "and world peace was finally found.",
+        "image":"images/world-peace.jpg" ,
+        "choices" : [ 
+                        {
+                            "text" : "Thanks for playing",
+                            "next_state" : "end"
+                        }
+                ]
+            }
+
+
+
+}
